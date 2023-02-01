@@ -1,0 +1,142 @@
+html {
+    height: 100%;
+}
+
+:root{
+    --couleur-noir: #1a1a1a;
+    --couleur-marron: rgb(162, 131, 91);
+    --couleur-beige: rgb(247, 244, 200);
+}
+
+body {
+    background: linear-gradient(rgb(236, 223, 141),rgb(228, 157, 42)); 
+    width: 100vw;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-decoration: none;
+    text-align: center;
+}
+
+.container {
+    height: min-content;
+    width: 30vw;
+    margin: auto;
+    margin-top: 15vh ;
+    background-color: var(--couleur-beige);
+    border: 1px solid black;
+
+}
+
+.container > h1,form,.obliteration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+input {
+    text-decoration: none;
+    text-align: center;
+    height: 3vh;
+    width: 10vw;
+    margin-right: 1vh;
+    border: 1px solid ;
+    border-radius: 15px;
+
+}
+
+.li {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    margin: auto;
+    width: 80%;
+    height: 10vh;
+    margin-bottom:1vh;
+    
+}
+
+.actionsup {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    color: black;
+    background-color: red;
+    font-size: 1vw;
+    padding: 0.8vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.actioncheck {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    color: black;
+    background-color: rgb(0, 255, 13);
+    font-size: 1vw;
+    padding: 0.8vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.statut0, .statut1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 1vw;
+    padding: 1vw;
+    width: 80%;
+    font-size: 1.2vw;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.text {
+    text-decoration : underline;
+}
+
+.statut0::first-line {
+    text-transform: uppercase;
+}
+
+.statut0 {
+    text-decoration: none;
+}
+
+.statut1 {
+    text-decoration: line-through;
+}
+
+.obliteration {
+    color: red;
+    padding: 0.7vw;
+    border: #1a1a1a 1px solid;
+    margin: auto;
+    margin-bottom: 3vh;
+    background-color: bisque;
+    width: 50%;
+}
